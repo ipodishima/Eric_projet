@@ -13,6 +13,28 @@
 		9B4B912B16244C5B00276677 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B4B912916244C5B00276677 /* InfoPlist.strings */; };
 		9B4B912D16244C5B00276677 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4B912C16244C5B00276677 /* main.m */; };
 		9B4B913116244C5B00276677 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4B913016244C5B00276677 /* AppDelegate.m */; };
+		9B7079AC16245B2D00B1150D /* Vins.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7079AA16245B2D00B1150D /* Vins.m */; };
+		9B7079AD16245B2D00B1150D /* Vins.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7079AB16245B2D00B1150D /* Vins.xib */; };
+		9B7079B116245B5700B1150D /* Cours.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7079AF16245B5700B1150D /* Cours.m */; };
+		9B7079B216245B5700B1150D /* Cours.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7079B016245B5700B1150D /* Cours.xib */; };
+		9B7079B616245B6A00B1150D /* Commandes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7079B416245B6900B1150D /* Commandes.m */; };
+		9B7079B716245B6A00B1150D /* Commandes.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7079B516245B6900B1150D /* Commandes.xib */; };
+		9B7079BB16245B7600B1150D /* Videos.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7079B916245B7600B1150D /* Videos.m */; };
+		9B7079BC16245B7600B1150D /* Videos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7079BA16245B7600B1150D /* Videos.xib */; };
+		9B7079C016245B9400B1150D /* Communautaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7079BE16245B9400B1150D /* Communautaire.m */; };
+		9B7079C116245B9400B1150D /* Communautaire.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7079BF16245B9400B1150D /* Communautaire.xib */; };
+		9B7079C516245B9E00B1150D /* Profil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7079C316245B9E00B1150D /* Profil.m */; };
+		9B7079C616245B9E00B1150D /* Profil.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7079C416245B9E00B1150D /* Profil.xib */; };
+		9B7079CA16245BA900B1150D /* Apropos.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7079C816245BA900B1150D /* Apropos.m */; };
+		9B7079CB16245BA900B1150D /* Apropos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7079C916245BA900B1150D /* Apropos.xib */; };
+		9B7079D31624626900B1150D /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7079D21624626900B1150D /* iCarousel.m */; };
+		9B7079D91624628500B1150D /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B7079D51624628500B1150D /* CHANGELOG.md */; };
+		9B7079DA1624628500B1150D /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7079D71624628500B1150D /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9B7079DB1624628500B1150D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B7079D81624628500B1150D /* README.md */; };
+		9B7079E1162462A300B1150D /* LBYouTubePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7079DE162462A300B1150D /* LBYouTubePlayerController.m */; };
+		9B7079E2162462A300B1150D /* LBYouTubePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7079E0162462A300B1150D /* LBYouTubePlayerViewController.m */; };
+		9B7079E9162462FD00B1150D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7079E8162462FD00B1150D /* QuartzCore.framework */; };
+		9B7079EB1624630900B1150D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7079EA1624630900B1150D /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +48,44 @@
 		9B4B912E16244C5B00276677 /* Eric_projet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eric_projet-Prefix.pch"; sourceTree = "<group>"; };
 		9B4B912F16244C5B00276677 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9B4B913016244C5B00276677 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9B7079A916245B2D00B1150D /* Vins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vins.h; sourceTree = "<group>"; };
+		9B7079AA16245B2D00B1150D /* Vins.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vins.m; sourceTree = "<group>"; };
+		9B7079AB16245B2D00B1150D /* Vins.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Vins.xib; sourceTree = "<group>"; };
+		9B7079AE16245B5700B1150D /* Cours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cours.h; sourceTree = "<group>"; };
+		9B7079AF16245B5700B1150D /* Cours.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cours.m; sourceTree = "<group>"; };
+		9B7079B016245B5700B1150D /* Cours.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cours.xib; sourceTree = "<group>"; };
+		9B7079B316245B6900B1150D /* Commandes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Commandes.h; sourceTree = "<group>"; };
+		9B7079B416245B6900B1150D /* Commandes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Commandes.m; sourceTree = "<group>"; };
+		9B7079B516245B6900B1150D /* Commandes.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Commandes.xib; sourceTree = "<group>"; };
+		9B7079B816245B7600B1150D /* Videos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Videos.h; sourceTree = "<group>"; };
+		9B7079B916245B7600B1150D /* Videos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Videos.m; sourceTree = "<group>"; };
+		9B7079BA16245B7600B1150D /* Videos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Videos.xib; sourceTree = "<group>"; };
+		9B7079BD16245B9400B1150D /* Communautaire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Communautaire.h; sourceTree = "<group>"; };
+		9B7079BE16245B9400B1150D /* Communautaire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Communautaire.m; sourceTree = "<group>"; };
+		9B7079BF16245B9400B1150D /* Communautaire.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Communautaire.xib; sourceTree = "<group>"; };
+		9B7079C216245B9E00B1150D /* Profil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profil.h; sourceTree = "<group>"; };
+		9B7079C316245B9E00B1150D /* Profil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profil.m; sourceTree = "<group>"; };
+		9B7079C416245B9E00B1150D /* Profil.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Profil.xib; sourceTree = "<group>"; };
+		9B7079C716245BA900B1150D /* Apropos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Apropos.h; sourceTree = "<group>"; };
+		9B7079C816245BA900B1150D /* Apropos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Apropos.m; sourceTree = "<group>"; };
+		9B7079C916245BA900B1150D /* Apropos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Apropos.xib; sourceTree = "<group>"; };
+		9B7079D11624626900B1150D /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		9B7079D21624626900B1150D /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		9B7079D51624628500B1150D /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		9B7079D61624628500B1150D /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		9B7079D71624628500B1150D /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		9B7079D81624628500B1150D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		9B7079DD162462A300B1150D /* LBYouTubePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYouTubePlayerController.h; sourceTree = "<group>"; };
+		9B7079DE162462A300B1150D /* LBYouTubePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBYouTubePlayerController.m; sourceTree = "<group>"; };
+		9B7079DF162462A300B1150D /* LBYouTubePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYouTubePlayerViewController.h; sourceTree = "<group>"; };
+		9B7079E0162462A300B1150D /* LBYouTubePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBYouTubePlayerViewController.m; sourceTree = "<group>"; };
+		9B7079E3162462B200B1150D /* DownloadDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DownloadDelegate.h; path = MSToolTips/MSToolTips/DownloadDelegate.h; sourceTree = SOURCE_ROOT; };
+		9B7079E4162462B200B1150D /* DownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DownloadManager.h; path = MSToolTips/MSToolTips/DownloadManager.h; sourceTree = SOURCE_ROOT; };
+		9B7079E5162462B200B1150D /* DownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DownloadManager.m; path = MSToolTips/MSToolTips/DownloadManager.m; sourceTree = SOURCE_ROOT; };
+		9B7079E6162462B300B1150D /* DownloadOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DownloadOperation.h; path = MSToolTips/MSToolTips/DownloadOperation.h; sourceTree = SOURCE_ROOT; };
+		9B7079E7162462B300B1150D /* DownloadOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DownloadOperation.m; path = MSToolTips/MSToolTips/DownloadOperation.m; sourceTree = SOURCE_ROOT; };
+		9B7079E8162462FD00B1150D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9B7079EA1624630900B1150D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B7079EB1624630900B1150D /* MediaPlayer.framework in Frameworks */,
+				9B7079E9162462FD00B1150D /* QuartzCore.framework in Frameworks */,
 				9B4B912116244C5B00276677 /* UIKit.framework in Frameworks */,
 				9B4B912316244C5B00276677 /* Foundation.framework in Frameworks */,
 				9B4B912516244C5B00276677 /* CoreGraphics.framework in Frameworks */,
@@ -62,6 +124,8 @@
 		9B4B911F16244C5B00276677 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B7079EA1624630900B1150D /* MediaPlayer.framework */,
+				9B7079E8162462FD00B1150D /* QuartzCore.framework */,
 				9B4B912016244C5B00276677 /* UIKit.framework */,
 				9B4B912216244C5B00276677 /* Foundation.framework */,
 				9B4B912416244C5B00276677 /* CoreGraphics.framework */,
@@ -72,8 +136,30 @@
 		9B4B912616244C5B00276677 /* Eric_projet */ = {
 			isa = PBXGroup;
 			children = (
+				9B7079EC1624632000B1150D /* Third party */,
 				9B4B912F16244C5B00276677 /* AppDelegate.h */,
 				9B4B913016244C5B00276677 /* AppDelegate.m */,
+				9B7079A916245B2D00B1150D /* Vins.h */,
+				9B7079AA16245B2D00B1150D /* Vins.m */,
+				9B7079AB16245B2D00B1150D /* Vins.xib */,
+				9B7079AE16245B5700B1150D /* Cours.h */,
+				9B7079AF16245B5700B1150D /* Cours.m */,
+				9B7079B016245B5700B1150D /* Cours.xib */,
+				9B7079B316245B6900B1150D /* Commandes.h */,
+				9B7079B416245B6900B1150D /* Commandes.m */,
+				9B7079B516245B6900B1150D /* Commandes.xib */,
+				9B7079B816245B7600B1150D /* Videos.h */,
+				9B7079B916245B7600B1150D /* Videos.m */,
+				9B7079BA16245B7600B1150D /* Videos.xib */,
+				9B7079BD16245B9400B1150D /* Communautaire.h */,
+				9B7079BE16245B9400B1150D /* Communautaire.m */,
+				9B7079BF16245B9400B1150D /* Communautaire.xib */,
+				9B7079C216245B9E00B1150D /* Profil.h */,
+				9B7079C316245B9E00B1150D /* Profil.m */,
+				9B7079C416245B9E00B1150D /* Profil.xib */,
+				9B7079C716245BA900B1150D /* Apropos.h */,
+				9B7079C816245BA900B1150D /* Apropos.m */,
+				9B7079C916245BA900B1150D /* Apropos.xib */,
 				9B4B912716244C5B00276677 /* Supporting Files */,
 			);
 			path = Eric_projet;
@@ -88,6 +174,55 @@
 				9B4B912E16244C5B00276677 /* Eric_projet-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B7079D01624626900B1150D /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				9B7079D11624626900B1150D /* iCarousel.h */,
+				9B7079D21624626900B1150D /* iCarousel.m */,
+			);
+			name = iCarousel;
+			path = MSToolTips/vendor/iCarousel/iCarousel;
+			sourceTree = SOURCE_ROOT;
+		};
+		9B7079D41624628500B1150D /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				9B7079D51624628500B1150D /* CHANGELOG.md */,
+				9B7079D61624628500B1150D /* JSONKit.h */,
+				9B7079D71624628500B1150D /* JSONKit.m */,
+				9B7079D81624628500B1150D /* README.md */,
+			);
+			name = JSONKit;
+			path = MSToolTips/vendor/LBYoutubeView/Submodules/JSONKit;
+			sourceTree = SOURCE_ROOT;
+		};
+		9B7079DC162462A300B1150D /* LBYouTubePlayerController */ = {
+			isa = PBXGroup;
+			children = (
+				9B7079DD162462A300B1150D /* LBYouTubePlayerController.h */,
+				9B7079DE162462A300B1150D /* LBYouTubePlayerController.m */,
+				9B7079DF162462A300B1150D /* LBYouTubePlayerViewController.h */,
+				9B7079E0162462A300B1150D /* LBYouTubePlayerViewController.m */,
+			);
+			name = LBYouTubePlayerController;
+			path = MSToolTips/vendor/LBYoutubeView/LBYouTubePlayerController;
+			sourceTree = SOURCE_ROOT;
+		};
+		9B7079EC1624632000B1150D /* Third party */ = {
+			isa = PBXGroup;
+			children = (
+				9B7079E3162462B200B1150D /* DownloadDelegate.h */,
+				9B7079E4162462B200B1150D /* DownloadManager.h */,
+				9B7079E5162462B200B1150D /* DownloadManager.m */,
+				9B7079E6162462B300B1150D /* DownloadOperation.h */,
+				9B7079E7162462B300B1150D /* DownloadOperation.m */,
+				9B7079DC162462A300B1150D /* LBYouTubePlayerController */,
+				9B7079D41624628500B1150D /* JSONKit */,
+				9B7079D01624626900B1150D /* iCarousel */,
+			);
+			name = "Third party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,7 +251,7 @@
 		9B4B911316244C5B00276677 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 9B4B911616244C5B00276677 /* Build configuration list for PBXProject "Eric_projet" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -141,6 +276,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B4B912B16244C5B00276677 /* InfoPlist.strings in Resources */,
+				9B7079AD16245B2D00B1150D /* Vins.xib in Resources */,
+				9B7079B216245B5700B1150D /* Cours.xib in Resources */,
+				9B7079B716245B6A00B1150D /* Commandes.xib in Resources */,
+				9B7079BC16245B7600B1150D /* Videos.xib in Resources */,
+				9B7079C116245B9400B1150D /* Communautaire.xib in Resources */,
+				9B7079C616245B9E00B1150D /* Profil.xib in Resources */,
+				9B7079CB16245BA900B1150D /* Apropos.xib in Resources */,
+				9B7079D91624628500B1150D /* CHANGELOG.md in Resources */,
+				9B7079DB1624628500B1150D /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +297,17 @@
 			files = (
 				9B4B912D16244C5B00276677 /* main.m in Sources */,
 				9B4B913116244C5B00276677 /* AppDelegate.m in Sources */,
+				9B7079AC16245B2D00B1150D /* Vins.m in Sources */,
+				9B7079B116245B5700B1150D /* Cours.m in Sources */,
+				9B7079B616245B6A00B1150D /* Commandes.m in Sources */,
+				9B7079BB16245B7600B1150D /* Videos.m in Sources */,
+				9B7079C016245B9400B1150D /* Communautaire.m in Sources */,
+				9B7079C516245B9E00B1150D /* Profil.m in Sources */,
+				9B7079CA16245BA900B1150D /* Apropos.m in Sources */,
+				9B7079D31624626900B1150D /* iCarousel.m in Sources */,
+				9B7079DA1624628500B1150D /* JSONKit.m in Sources */,
+				9B7079E1162462A300B1150D /* LBYouTubePlayerController.m in Sources */,
+				9B7079E2162462A300B1150D /* LBYouTubePlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +411,7 @@
 				9B4B913616244C5B00276677 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

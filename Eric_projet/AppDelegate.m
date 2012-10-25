@@ -7,10 +7,20 @@
 //
 
 #import "AppDelegate.h"
+#import "Vins.h"
+#import "Cours.h"
+#import "Commandes.h"
+#import "Videos.h"
+#import "Communautaire.h"
+#import "Profil.h"
+#import "Apropos.h"
+
+
 
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize tabBarController = _tabBarController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -18,6 +28,38 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    self.tabBarController = [[UITabBarController alloc] init];
+    
+    Vins *vins = [[Vins alloc] initWithNibName:@"Vins" bundle:nil];
+    vins.title = @"Vins";
+    
+    Cours *cours = [[Cours alloc] initWithNibName:@"Cours" bundle:nil];
+    cours.title = @"Cours";
+    
+    Commandes *commandes = [[Commandes alloc] initWithNibName:@"Commandes" bundle:nil];
+    commandes.title = @"Commandes";
+    
+    Videos *videos = [[Videos alloc] initWithNibName:@"Videos" bundle:nil];
+    videos.title = @"Vidéos";
+    
+    Communautaire *communautaire = [[Communautaire alloc] initWithNibName:@"Communautaire" bundle:nil];
+    communautaire.title = @"Amis";
+    
+    Profil *profil = [[Profil alloc] initWithNibName:@"Profil" bundle:nil];
+    profil.title = @"Profil";
+    
+    Apropos *apropos = [[Apropos alloc] initWithNibName:@"APropos" bundle:nil];
+    apropos.title = @"A Propos";
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:cours];
+    navigationController.title = @"Cours";
+    [navigationController setNavigationBarHidden:NO];
+    
+    _tabBarController.viewControllers = [NSArray arrayWithObjects:vins, cours, commandes, videos, communautaire, profil, apropos, nil];
+    
+    [self.window setRootViewController:_tabBarController];
+    [_tabBarController.tabBar setTintColor:[UIColor blueColor]];
+    [_tabBarController.tabBar setSelectedImageTintColor:[UIColor whiteColor]];
     return YES;
 }
 
