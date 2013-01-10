@@ -10,12 +10,16 @@
 #import "Vins.h"
 #import "Cours.h"
 #import "Commandes.h"
-#import "Videos.h"
 #import "Communautaire.h"
 #import "Profil.h"
 #import "Apropos.h"
 
-
+#import "YouTubeViewController.h"
+#import "LocalFileViewController.h"
+#import "WineViewController.h"
+#import "PerformancesViewController.h"
+#import "VideoViewController.h"
+#import "SampleLoadViewController.h"
 
 @implementation AppDelegate
 
@@ -30,8 +34,16 @@
     [self.window makeKeyAndVisible];
     self.tabBarController = [[UITabBarController alloc] init];
     
-    Vins *vins = [[Vins alloc] initWithNibName:@"Vins" bundle:nil];
+    /*Vins *vins = [[Vins alloc] initWithNibName:@"Vins" bundle:nil];
+    vins.title = @"Vins";*/
+    //UIImage *bouteille = [[UIImage alloc] initWithContentsOfFile:@"bouteille.png"];
+    SampleLoadViewController *vins = [[SampleLoadViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *navControllerSample = [[UINavigationController alloc] initWithRootViewController:vins];
+    UITabBarItem *tabBarItem1 = [[UITabBarItem alloc] initWithTitle:@"Vins"
+                                                              image:nil
+                                                                tag:5];
     vins.title = @"Vins";
+    navControllerSample.tabBarItem = tabBarItem1;
     
     Cours *cours = [[Cours alloc] initWithNibName:@"Cours" bundle:nil];
     cours.title = @"Cours";
@@ -39,8 +51,12 @@
     Commandes *commandes = [[Commandes alloc] initWithNibName:@"Commandes" bundle:nil];
     commandes.title = @"Commandes";
     
-    Videos *videos = [[Videos alloc] initWithNibName:@"Videos" bundle:nil];
-    videos.title = @"Vidéos";
+    VideoViewController *video = [[VideoViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *navControllerVideo = [[UINavigationController alloc] initWithRootViewController:video];
+    UITabBarItem *tabBarItem5 = [[UITabBarItem alloc] initWithTitle:@"Video"
+                                                              image:nil
+                                                                tag:4];
+      navControllerVideo.tabBarItem = tabBarItem5;
     
     Communautaire *communautaire = [[Communautaire alloc] initWithNibName:@"Communautaire" bundle:nil];
     communautaire.title = @"Amis";
@@ -55,7 +71,7 @@
     navigationController.title = @"Cours";
     [navigationController setNavigationBarHidden:NO];
     
-    _tabBarController.viewControllers = [NSArray arrayWithObjects:vins, cours, commandes, videos, communautaire, profil, apropos, nil];
+    _tabBarController.viewControllers = [NSArray arrayWithObjects:vins, cours, commandes, navControllerVideo, communautaire, profil, apropos, nil];
     
     [self.window setRootViewController:_tabBarController];
     [_tabBarController.tabBar setTintColor:[UIColor blueColor]];

@@ -1,0 +1,42 @@
+[
+    {
+        "nom": "La Roche Beaucourt",
+        "année": 2010,
+        "domaine": "Château Pierrail"
+    },
+    {
+        "nom": "Muscat de Mireval",
+        "année": 2011,
+        "domaine": "Domaine de Mireval"
+    },
+    {
+        "nom": "Saint-Emilion Grand Cru",
+        "année": 2009,
+        "domaine": "Château Béard la Chapelle"
+    },
+    {
+        "nom": "Duas Quintas",
+        "année": 2011,
+        "domaine": "Adriano Ramos Pinto"
+    },
+    {
+        "nom": "Juliénas ",
+        "année": 2011,
+        "domaine": "Rémi & Paola Benon"
+    },
+    {
+        "nom": "Champagne \"Hugues de Coulmet\"",
+        "année": 2000,
+        "domaine": "Maison Pierre Moncuit"
+    },
+    {
+        "nom": "Carignanissime ",
+        "année": 2009,
+        "domaine": "Clos Centeille"
+    },
+    {
+        "nom": "La Capitane",
+        "année": 2010,
+        "domaine": "Château de Bel"
+    }
+]
