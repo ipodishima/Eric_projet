@@ -1,19 +1,19 @@
 //
-//  SampleLoadViewController.m
+//  CoursLoadViewController.m
 //  MSToolTips
 //
 //  Created by Marian Paul on 24/10/12.
 //  Copyright (c) 2012 Marian Paul. All rights reserved.
 //
 
-#import "SampleLoadViewController.h"
+#import "CoursLoadViewController.h"
 #import "Contact.h"
 
-@interface SampleLoadViewController ()
+@interface CoursLoadViewController ()
 
 @end
 
-@implementation SampleLoadViewController
+@implementation CoursLoadViewController
 
 - (void)viewDidLoad
 {
@@ -28,7 +28,7 @@
     // Load the JSON from the file
     // The json has been build using http://www.jsoneditoronline.org/ There may be other services
     
-    [[DownloadManager shared] loadLocalFileName:@"document" withDelegate:self];
+    [[DownloadManager shared] loadLocalFileName:@"cours" withDelegate:self];
     // Yeah, that's as simple. Please note that this is not magic, see DownloadManager for implementation.
     // Basically, I just wanted to keep it simple for you. If you want to know how it works behind the scene, take time to read the code.
     // If your app will be connected, then you just have to replace the previous line with
@@ -80,7 +80,7 @@
     
     // Display!
     cell.textLabel.text = [NSString stringWithFormat:@"%@", c.firstName];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %d", c.job, c.age];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@ — %@", c.lastName, c.job, c.age];
     
     return cell;
 }
@@ -148,8 +148,10 @@
         
         // Set its properties from JSON 'object'
         c.firstName = [dic objectForKey:@"nom"];
-        c.job = [dic objectForKey:@"domaine"];
-        c.age = [[dic objectForKey:@"année"] integerValue];
+        c.lastName = [dic objectForKey:@"lieu"];
+        c.job = [dic objectForKey:@"date"];
+        c.age = [dic objectForKey:@"prix"];
+        
         // Add it to the array
         [_arrayOfContacts addObject:c];
     }

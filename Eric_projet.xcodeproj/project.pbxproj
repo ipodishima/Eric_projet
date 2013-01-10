@@ -22,7 +22,6 @@
 		9B596F9A163927D200B5AB9F /* LocalFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B596F81163927D200B5AB9F /* LocalFileViewController.xib */; };
 		9B596F9B163927D200B5AB9F /* PerformanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B596F83163927D200B5AB9F /* PerformanceCell.m */; };
 		9B596F9C163927D200B5AB9F /* PerformancesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B596F85163927D200B5AB9F /* PerformancesViewController.m */; };
-		9B596F9D163927D200B5AB9F /* SampleLoad.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B596F86163927D200B5AB9F /* SampleLoad.json */; };
 		9B596F9E163927D200B5AB9F /* SampleLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B596F88163927D200B5AB9F /* SampleLoadViewController.m */; };
 		9B596F9F163927D200B5AB9F /* WineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B596F8A163927D200B5AB9F /* WineViewController.m */; };
 		9B596FA0163927D200B5AB9F /* YouTubeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B596F8C163927D200B5AB9F /* YouTubeManager.m */; };
@@ -33,8 +32,6 @@
 		9B596FA6163931EF00B5AB9F /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7079E7162462B300B1150D /* DownloadOperation.m */; };
 		9B7079AC16245B2D00B1150D /* Vins.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7079AA16245B2D00B1150D /* Vins.m */; };
 		9B7079AD16245B2D00B1150D /* Vins.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7079AB16245B2D00B1150D /* Vins.xib */; };
-		9B7079B116245B5700B1150D /* Cours.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7079AF16245B5700B1150D /* Cours.m */; };
-		9B7079B216245B5700B1150D /* Cours.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7079B016245B5700B1150D /* Cours.xib */; };
 		9B7079B616245B6A00B1150D /* Commandes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7079B416245B6900B1150D /* Commandes.m */; };
 		9B7079B716245B6A00B1150D /* Commandes.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7079B516245B6900B1150D /* Commandes.xib */; };
 		9B7079C016245B9400B1150D /* Communautaire.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7079BE16245B9400B1150D /* Communautaire.m */; };
@@ -51,6 +48,8 @@
 		9B7079E2162462A300B1150D /* LBYouTubePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7079E0162462A300B1150D /* LBYouTubePlayerViewController.m */; };
 		9B7079E9162462FD00B1150D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7079E8162462FD00B1150D /* QuartzCore.framework */; };
 		9B7079EB1624630900B1150D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B7079EA1624630900B1150D /* MediaPlayer.framework */; };
+		9B791C1A169EC411007433BD /* cours.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B791C19169EC411007433BD /* cours.json */; };
+		9B791C1D169ED0B8007433BD /* CoursLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B791C17169EC218007433BD /* CoursLoadViewController.m */; };
 		9B8FCB311639379000BE40D1 /* VideoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8FCB2D1639379000BE40D1 /* VideoDetailViewController.m */; };
 		9B8FCB321639379000BE40D1 /* VideoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8FCB2E1639379000BE40D1 /* VideoDetailViewController.xib */; };
 		9B8FCB331639379000BE40D1 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8FCB301639379000BE40D1 /* VideoViewController.m */; };
@@ -80,7 +79,6 @@
 		9B596F83163927D200B5AB9F /* PerformanceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformanceCell.m; sourceTree = "<group>"; };
 		9B596F84163927D200B5AB9F /* PerformancesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformancesViewController.h; sourceTree = "<group>"; };
 		9B596F85163927D200B5AB9F /* PerformancesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformancesViewController.m; sourceTree = "<group>"; };
-		9B596F86163927D200B5AB9F /* SampleLoad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleLoad.json; sourceTree = "<group>"; };
 		9B596F87163927D200B5AB9F /* SampleLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleLoadViewController.h; sourceTree = "<group>"; };
 		9B596F88163927D200B5AB9F /* SampleLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleLoadViewController.m; sourceTree = "<group>"; };
 		9B596F89163927D200B5AB9F /* WineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WineViewController.h; sourceTree = "<group>"; };
@@ -95,9 +93,6 @@
 		9B7079A916245B2D00B1150D /* Vins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vins.h; sourceTree = "<group>"; };
 		9B7079AA16245B2D00B1150D /* Vins.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vins.m; sourceTree = "<group>"; };
 		9B7079AB16245B2D00B1150D /* Vins.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Vins.xib; sourceTree = "<group>"; };
-		9B7079AE16245B5700B1150D /* Cours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cours.h; sourceTree = "<group>"; };
-		9B7079AF16245B5700B1150D /* Cours.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cours.m; sourceTree = "<group>"; };
-		9B7079B016245B5700B1150D /* Cours.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Cours.xib; sourceTree = "<group>"; };
 		9B7079B316245B6900B1150D /* Commandes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Commandes.h; sourceTree = "<group>"; };
 		9B7079B416245B6900B1150D /* Commandes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Commandes.m; sourceTree = "<group>"; };
 		9B7079B516245B6900B1150D /* Commandes.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Commandes.xib; sourceTree = "<group>"; };
@@ -127,6 +122,9 @@
 		9B7079E7162462B300B1150D /* DownloadOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DownloadOperation.m; path = MSToolTips/MSToolTips/DownloadOperation.m; sourceTree = SOURCE_ROOT; };
 		9B7079E8162462FD00B1150D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9B7079EA1624630900B1150D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		9B791C16169EC218007433BD /* CoursLoadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoursLoadViewController.h; sourceTree = "<group>"; };
+		9B791C17169EC218007433BD /* CoursLoadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoursLoadViewController.m; sourceTree = "<group>"; };
+		9B791C19169EC411007433BD /* cours.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cours.json; sourceTree = "<group>"; };
 		9B8FCB2C1639379000BE40D1 /* VideoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDetailViewController.h; sourceTree = "<group>"; };
 		9B8FCB2D1639379000BE40D1 /* VideoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDetailViewController.m; sourceTree = "<group>"; };
 		9B8FCB2E1639379000BE40D1 /* VideoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoDetailViewController.xib; sourceTree = "<group>"; };
@@ -190,9 +188,6 @@
 				9B7079A916245B2D00B1150D /* Vins.h */,
 				9B7079AA16245B2D00B1150D /* Vins.m */,
 				9B7079AB16245B2D00B1150D /* Vins.xib */,
-				9B7079AE16245B5700B1150D /* Cours.h */,
-				9B7079AF16245B5700B1150D /* Cours.m */,
-				9B7079B016245B5700B1150D /* Cours.xib */,
 				9B7079B316245B6900B1150D /* Commandes.h */,
 				9B7079B416245B6900B1150D /* Commandes.m */,
 				9B7079B516245B6900B1150D /* Commandes.xib */,
@@ -224,6 +219,9 @@
 		9B596F73163926E800B5AB9F /* Tab bar items */ = {
 			isa = PBXGroup;
 			children = (
+				9B791C19169EC411007433BD /* cours.json */,
+				9B791C16169EC218007433BD /* CoursLoadViewController.h */,
+				9B791C17169EC218007433BD /* CoursLoadViewController.m */,
 				9B1D4F65169D9483008BA64F /* document.json */,
 				9B596F75163927D200B5AB9F /* bouteille.png */,
 				9B596F76163927D200B5AB9F /* bouteille@2x.png */,
@@ -242,7 +240,6 @@
 				9B596F83163927D200B5AB9F /* PerformanceCell.m */,
 				9B596F84163927D200B5AB9F /* PerformancesViewController.h */,
 				9B596F85163927D200B5AB9F /* PerformancesViewController.m */,
-				9B596F86163927D200B5AB9F /* SampleLoad.json */,
 				9B596F87163927D200B5AB9F /* SampleLoadViewController.h */,
 				9B596F88163927D200B5AB9F /* SampleLoadViewController.m */,
 				9B596F89163927D200B5AB9F /* WineViewController.h */,
@@ -366,7 +363,6 @@
 			files = (
 				9B4B912B16244C5B00276677 /* InfoPlist.strings in Resources */,
 				9B7079AD16245B2D00B1150D /* Vins.xib in Resources */,
-				9B7079B216245B5700B1150D /* Cours.xib in Resources */,
 				9B7079B716245B6A00B1150D /* Commandes.xib in Resources */,
 				9B7079C116245B9400B1150D /* Communautaire.xib in Resources */,
 				9B7079C616245B9E00B1150D /* Profil.xib in Resources */,
@@ -377,10 +373,10 @@
 				9B596F93163927D200B5AB9F /* bouteille@2x.png in Resources */,
 				9B596F98163927D200B5AB9F /* File.json in Resources */,
 				9B596F9A163927D200B5AB9F /* LocalFileViewController.xib in Resources */,
-				9B596F9D163927D200B5AB9F /* SampleLoad.json in Resources */,
 				9B596FA3163927D200B5AB9F /* YouTubeViewController.xib in Resources */,
 				9B8FCB321639379000BE40D1 /* VideoDetailViewController.xib in Resources */,
 				9B1D4F66169D9483008BA64F /* document.json in Resources */,
+				9B791C1A169EC411007433BD /* cours.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,10 +387,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B791C1D169ED0B8007433BD /* CoursLoadViewController.m in Sources */,
 				9B4B912D16244C5B00276677 /* main.m in Sources */,
 				9B4B913116244C5B00276677 /* AppDelegate.m in Sources */,
 				9B7079AC16245B2D00B1150D /* Vins.m in Sources */,
-				9B7079B116245B5700B1150D /* Cours.m in Sources */,
 				9B7079B616245B6A00B1150D /* Commandes.m in Sources */,
 				9B7079C016245B9400B1150D /* Communautaire.m in Sources */,
 				9B7079C516245B9E00B1150D /* Profil.m in Sources */,

@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "Vins.h"
-#import "Cours.h"
 #import "Commandes.h"
 #import "Communautaire.h"
 #import "Profil.h"
@@ -20,6 +19,7 @@
 #import "PerformancesViewController.h"
 #import "VideoViewController.h"
 #import "SampleLoadViewController.h"
+#import "CoursLoadViewController.h"
 
 @implementation AppDelegate
 
@@ -30,12 +30,10 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor purpleColor];
     [self.window makeKeyAndVisible];
     self.tabBarController = [[UITabBarController alloc] init];
-    
-    /*Vins *vins = [[Vins alloc] initWithNibName:@"Vins" bundle:nil];
-    vins.title = @"Vins";*/
+ 
     //UIImage *bouteille = [[UIImage alloc] initWithContentsOfFile:@"bouteille.png"];
     SampleLoadViewController *vins = [[SampleLoadViewController alloc] initWithStyle:UITableViewStylePlain];
     UINavigationController *navControllerSample = [[UINavigationController alloc] initWithRootViewController:vins];
@@ -45,9 +43,14 @@
     vins.title = @"Vins";
     navControllerSample.tabBarItem = tabBarItem1;
     
-    Cours *cours = [[Cours alloc] initWithNibName:@"Cours" bundle:nil];
+    CoursLoadViewController *cours = [[CoursLoadViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *navControllerCours = [[UINavigationController alloc] initWithRootViewController:cours];
+    UITabBarItem *tabBarItem3 = [[UITabBarItem alloc] initWithTitle:@"Cours"
+                                                              image:nil
+                                                                tag:3];
     cours.title = @"Cours";
-    
+    navControllerCours.tabBarItem = tabBarItem3;
+     
     Commandes *commandes = [[Commandes alloc] initWithNibName:@"Commandes" bundle:nil];
     commandes.title = @"Commandes";
     
@@ -67,9 +70,9 @@
     Apropos *apropos = [[Apropos alloc] initWithNibName:@"APropos" bundle:nil];
     apropos.title = @"A Propos";
     
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:cours];
+  /*  UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:cours];
     navigationController.title = @"Cours";
-    [navigationController setNavigationBarHidden:NO];
+    [navigationController setNavigationBarHidden:NO];*/
     
     _tabBarController.viewControllers = [NSArray arrayWithObjects:vins, cours, commandes, navControllerVideo, communautaire, profil, apropos, nil];
     
