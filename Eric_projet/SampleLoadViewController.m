@@ -98,7 +98,8 @@
 {
     // Navigation logic may go here. Create and push another view controller.
     
-     VinViewController *vindetailViewController = [[VinViewController alloc] initWithNibName:@"vindetailViewController" bundle:nil];
+     VinViewController *vindetailViewController = [[VinViewController alloc] init];
+    
      // ...
     //vindetailViewController.id = [_arrayToDisplay objectAtIndex:indexPath.row];
      // Pass the selected object to the new view controller.

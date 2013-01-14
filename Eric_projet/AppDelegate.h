@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VinViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+{
+    UITabBarController *_tabBarController;
+    VinViewController *vinViewController;
+    UIWindow *window;
+}
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UITabBarController *tabBarController;
+@property (nonatomic,retain)VinViewController *vinViewController;
 
 @end
