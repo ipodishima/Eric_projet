@@ -35,7 +35,7 @@
 {
     [super viewDidLoad];
 
-    [[YouTubeManager shared] setYouTubeUsername:@"iPuPsarl"];
+    //[[YouTubeManager shared] setYouTubeUsername:@"iPuPsarl"];
     [[YouTubeManager shared] setDelegate:self];
     [[YouTubeManager shared] loadDataFromOffset:1];
 }

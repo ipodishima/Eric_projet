@@ -7,6 +7,7 @@
 //
 
 #import "SampleLoadViewController.h"
+#import "VinViewController.h"
 #import "Contact.h"
 
 @interface SampleLoadViewController ()
@@ -44,6 +45,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
+}
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -90,12 +97,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+    
+     VinViewController *vindetailViewController = [[VinViewController alloc] initWithNibName:@"vindetailViewController" bundle:nil];
      // ...
+    //vindetailViewController.id = [_arrayToDisplay objectAtIndex:indexPath.row];
      // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     
+     [self.navigationController pushViewController:vindetailViewController animated:YES];
+     /*
      #pragma mark - Table view delegate
      
      - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

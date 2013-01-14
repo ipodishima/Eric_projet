@@ -20,6 +20,7 @@
 #import "VideoViewController.h"
 #import "SampleLoadViewController.h"
 #import "CoursLoadViewController.h"
+#import "VinViewController.h"
 
 @implementation AppDelegate
 
