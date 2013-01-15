@@ -32,7 +32,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor purpleColor];
-    [window addSubview:_tabBarController.view];
     [self.window makeKeyAndVisible];
     self.tabBarController = [[UITabBarController alloc] init];
  
@@ -82,6 +81,12 @@
     [self.window setRootViewController:_tabBarController];
     [_tabBarController.tabBar setTintColor:[UIColor blueColor]];
     [_tabBarController.tabBar setSelectedImageTintColor:[UIColor whiteColor]];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    _sampleLoadViewController = [[SampleLoadViewController alloc] initWithStyle:UITableViewStylePlain];
+    [self.window setRootViewController:_sampleLoadViewController];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

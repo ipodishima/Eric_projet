@@ -8,6 +8,7 @@
 
 #import "SampleLoadViewController.h"
 #import "VinViewController.h"
+#import "DetailListViewController.h"
 #import "Contact.h"
 
 @interface SampleLoadViewController ()
@@ -98,12 +99,12 @@
 {
     // Navigation logic may go here. Create and push another view controller.
     
-     VinViewController *vindetailViewController = [[VinViewController alloc] init];
+     //VinViewController *vindetailViewController = [[VinViewController alloc] init];
     
      // ...
     //vindetailViewController.id = [_arrayToDisplay objectAtIndex:indexPath.row];
      // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:vindetailViewController animated:YES];
+     //[self.navigationController pushViewController:vindetailViewController animated:YES];
      /*
      #pragma mark - Table view delegate
      
@@ -117,6 +118,13 @@
      
      }
      */
+    
+    DetailListViewController *detailListViewController = [[DetailListViewController alloc]
+                                                          initWithNibName:@"DetailListViewController" bundle:nil];
+    detailListViewController.texteAAfficher = [_arrayOfContacts objectAtIndex:[indexPath row]]; // Possibilité d’afficher un titre dans la barre de navigation detailListViewController.title = [_dataToShow objectAtIndex:[indexPath row]];
+    [self.navigationController pushViewController:detailListViewController animated:YES];
+    NSLog(@"fsdfsd");
+    
 }
 
 // 4) implement protocol

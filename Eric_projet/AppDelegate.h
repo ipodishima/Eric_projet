@@ -7,16 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "VinViewController.h"
+#import "SampleLoadViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 {
-    UITabBarController *_tabBarController;
-    VinViewController *vinViewController;
-    UIWindow *window;
+    SampleLoadViewController *_sampleLoadViewController;
 }
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UITabBarController *tabBarController;
-@property (nonatomic,retain)VinViewController *vinViewController;
 
 @end
