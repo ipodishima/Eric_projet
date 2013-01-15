@@ -7,11 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SampleLoadViewController.h"
+#import "DataListViewController.h"
+#import "VideoViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 {
-    SampleLoadViewController *_sampleLoadViewController;
+    DataListViewController *_dataListViewController;
+    UINavigationController *_navController;
+    
+    UINavigationController *nc1, *nc2;
+    DataListViewController *vc1;
+    VideoViewController *vc2;
+    UITabBarController *tbc;
 }
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UITabBarController *tabBarController;

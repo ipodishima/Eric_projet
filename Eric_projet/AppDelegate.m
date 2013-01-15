@@ -21,6 +21,7 @@
 #import "SampleLoadViewController.h"
 #import "CoursLoadViewController.h"
 #import "VinViewController.h"
+#import "DataListViewController.h"
 
 @implementation AppDelegate
 
@@ -31,18 +32,29 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor purpleColor];
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    self.tabBarController = [[UITabBarController alloc] init];
+    //self.tabBarController = [[UITabBarController alloc] init];
  
     //UIImage *bouteille = [[UIImage alloc] initWithContentsOfFile:@"bouteille.png"];
-    SampleLoadViewController *vins = [[SampleLoadViewController alloc] initWithStyle:UITableViewStylePlain];
+    /*SampleLoadViewController *vins = [[SampleLoadViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *navControllerSample = [[UINavigationController alloc] initWithRootViewController:vins];
+    UITabBarItem *tabBarItem1 = [[UITabBarItem alloc] initWithTitle:@"Vins"
+                                                              image:nil
+                                                                tag:5];
+    vins.title = @"Vins";
+    navControllerSample.tabBarItem = tabBarItem1;*/
+    
+    /*
+    DataListViewController *vins = [[DataListViewController alloc] initWithStyle:UITableViewStylePlain];
     UINavigationController *navControllerSample = [[UINavigationController alloc] initWithRootViewController:vins];
     UITabBarItem *tabBarItem1 = [[UITabBarItem alloc] initWithTitle:@"Vins"
                                                               image:nil
                                                                 tag:5];
     vins.title = @"Vins";
     navControllerSample.tabBarItem = tabBarItem1;
+    
+    
     
     CoursLoadViewController *cours = [[CoursLoadViewController alloc] initWithStyle:UITableViewStylePlain];
     UINavigationController *navControllerCours = [[UINavigationController alloc] initWithRootViewController:cours];
@@ -70,21 +82,37 @@
     
     Apropos *apropos = [[Apropos alloc] initWithNibName:@"APropos" bundle:nil];
     apropos.title = @"A Propos";
-    
-  /*  UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:cours];
-    navigationController.title = @"Cours";
-    [navigationController setNavigationBarHidden:NO];*/
-    
+        
     _tabBarController.viewControllers = [NSArray arrayWithObjects:vins, cours, commandes, navControllerVideo, communautaire, profil, apropos, nil];
     
-    //[self.window setRootViewController:_tabBarController];
     [self.window setRootViewController:_tabBarController];
     [_tabBarController.tabBar setTintColor:[UIColor blueColor]];
     [_tabBarController.tabBar setSelectedImageTintColor:[UIColor whiteColor]];
     
-    self.window.backgroundColor = [UIColor whiteColor];
-    _sampleLoadViewController = [[SampleLoadViewController alloc] initWithStyle:UITableViewStylePlain];
-    [self.window setRootViewController:_sampleLoadViewController];
+   
+    _dataListViewController = [[DataListViewController alloc] initWithStyle:UITableViewStylePlain];
+    _navController = [[UINavigationController alloc] initWithRootViewController:_dataListViewController];
+    [self.window setRootViewController:_tabBarController];
+    [self.window makeKeyAndVisible];*/
+    
+    nc1 = [[UINavigationController alloc] init];
+    vc1 = [[DataListViewController alloc] initWithNibName:nil bundle:nil];
+    vc1.tabBarItem.title = @"Tab 1";
+    vc1.tabBarItem.image = [UIImage imageNamed:@"tab1.png"];
+    vc1.navigationItem.title = @"Tab 1 Data";
+    nc1.viewControllers = [NSArray arrayWithObjects:vc1, nil];
+    
+    nc2 = [[UINavigationController alloc] init];
+    vc2 = [[VideoViewController alloc] initWithNibName:nil bundle:nil];
+    vc2.tabBarItem.title = @"Tab 2";
+    vc2.tabBarItem.image = [UIImage imageNamed:@"tab2.png"];
+    vc2.navigationItem.title = @"Tab 2 Data";
+    nc2.viewControllers = [NSArray arrayWithObjects:vc2, nil];
+    
+    tbc = [[UITabBarController alloc] init];
+    tbc.viewControllers = [NSArray arrayWithObjects:nc1, nc2, nil];
+    
+    [self.window setRootViewController:tbc];
     [self.window makeKeyAndVisible];
     
     return YES;

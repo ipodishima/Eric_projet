@@ -10,8 +10,9 @@
 		9B1D4F66169D9483008BA64F /* document.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B1D4F65169D9483008BA64F /* document.json */; };
 		9B26184516A43F4D00E68168 /* VinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B26184316A43F4D00E68168 /* VinViewController.m */; };
 		9B26184616A43F4D00E68168 /* VinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B26184416A43F4D00E68168 /* VinViewController.xib */; };
-		9B26185316A5453300E68168 /* DetailListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B26185116A5453300E68168 /* DetailListViewController.m */; };
-		9B26185416A5453300E68168 /* DetailListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B26185216A5453300E68168 /* DetailListViewController.xib */; };
+		9B26186116A54C7E00E68168 /* DataListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B26185D16A54BAE00E68168 /* DataListViewController.m */; };
+		9B26186216A54C8300E68168 /* DetailListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B26185F16A54BAF00E68168 /* DetailListViewController.m */; };
+		9B26186316A54C9100E68168 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B26185B16A54BAE00E68168 /* CustomCell.m */; };
 		9B4B912116244C5B00276677 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4B912016244C5B00276677 /* UIKit.framework */; };
 		9B4B912316244C5B00276677 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4B912216244C5B00276677 /* Foundation.framework */; };
 		9B4B912516244C5B00276677 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4B912416244C5B00276677 /* CoreGraphics.framework */; };
@@ -64,9 +65,13 @@
 		9B26184216A43F4D00E68168 /* VinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VinViewController.h; sourceTree = "<group>"; };
 		9B26184316A43F4D00E68168 /* VinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VinViewController.m; sourceTree = "<group>"; };
 		9B26184416A43F4D00E68168 /* VinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VinViewController.xib; sourceTree = "<group>"; };
-		9B26185016A5453200E68168 /* DetailListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailListViewController.h; sourceTree = "<group>"; };
-		9B26185116A5453300E68168 /* DetailListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailListViewController.m; sourceTree = "<group>"; };
-		9B26185216A5453300E68168 /* DetailListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailListViewController.xib; sourceTree = "<group>"; };
+		9B26185A16A54BAE00E68168 /* CustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		9B26185B16A54BAE00E68168 /* CustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		9B26185C16A54BAE00E68168 /* DataListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataListViewController.h; sourceTree = "<group>"; };
+		9B26185D16A54BAE00E68168 /* DataListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataListViewController.m; sourceTree = "<group>"; };
+		9B26185E16A54BAE00E68168 /* DetailListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailListViewController.h; sourceTree = "<group>"; };
+		9B26185F16A54BAF00E68168 /* DetailListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailListViewController.m; sourceTree = "<group>"; };
+		9B26186016A54BAF00E68168 /* DetailListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailListViewController.xib; sourceTree = "<group>"; };
 		9B4B911C16244C5B00276677 /* Eric_projet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eric_projet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B4B912016244C5B00276677 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9B4B912216244C5B00276677 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -229,10 +234,14 @@
 		9B596F73163926E800B5AB9F /* Tab bar items */ = {
 			isa = PBXGroup;
 			children = (
+				9B26185A16A54BAE00E68168 /* CustomCell.h */,
+				9B26185B16A54BAE00E68168 /* CustomCell.m */,
+				9B26185C16A54BAE00E68168 /* DataListViewController.h */,
+				9B26185D16A54BAE00E68168 /* DataListViewController.m */,
+				9B26185E16A54BAE00E68168 /* DetailListViewController.h */,
+				9B26185F16A54BAF00E68168 /* DetailListViewController.m */,
+				9B26186016A54BAF00E68168 /* DetailListViewController.xib */,
 				9B791C19169EC411007433BD /* cours.json */,
-				9B26185016A5453200E68168 /* DetailListViewController.h */,
-				9B26185116A5453300E68168 /* DetailListViewController.m */,
-				9B26185216A5453300E68168 /* DetailListViewController.xib */,
 				9B26184216A43F4D00E68168 /* VinViewController.h */,
 				9B26184316A43F4D00E68168 /* VinViewController.m */,
 				9B26184416A43F4D00E68168 /* VinViewController.xib */,
@@ -394,7 +403,6 @@
 				9B1D4F66169D9483008BA64F /* document.json in Resources */,
 				9B791C1A169EC411007433BD /* cours.json in Resources */,
 				9B26184616A43F4D00E68168 /* VinViewController.xib in Resources */,
-				9B26185416A5453300E68168 /* DetailListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +413,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B26186316A54C9100E68168 /* CustomCell.m in Sources */,
+				9B26186216A54C8300E68168 /* DetailListViewController.m in Sources */,
+				9B26186116A54C7E00E68168 /* DataListViewController.m in Sources */,
 				9B791C1D169ED0B8007433BD /* CoursLoadViewController.m in Sources */,
 				9B4B912D16244C5B00276677 /* main.m in Sources */,
 				9B4B913116244C5B00276677 /* AppDelegate.m in Sources */,
@@ -431,7 +442,6 @@
 				9B8FCB311639379000BE40D1 /* VideoDetailViewController.m in Sources */,
 				9B8FCB331639379000BE40D1 /* VideoViewController.m in Sources */,
 				9B26184516A43F4D00E68168 /* VinViewController.m in Sources */,
-				9B26185316A5453300E68168 /* DetailListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

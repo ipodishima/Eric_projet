@@ -1,33 +1,37 @@
 //
 //  DetailListViewController.m
-//  Eric_projet
+//  TableView
 //
-//  Created by Élèves on 15/01/13.
-//
+//  Created by Élèves on 03/10/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import "DetailListViewController.h"
-
-@interface DetailListViewController ()
-
-@end
-
-@implementation DetailListViewController
+@implementation DetailListViewController 
 @synthesize texteAAfficher = _texteAAfficher;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (void)didReceiveMemoryWarning
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
+    
+    // Release any cached data, images, etc that aren't in use.
 }
 
-- (void)viewDidLoad {
+#pragma mark - View lifecycle
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    _label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 30)]; [self.view addSubview:_label];
+    _label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
+    [self.view addSubview:_label];
     _label.text = _texteAAfficher;
+
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+ 
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewDidUnload
@@ -37,8 +41,29 @@
     // e.g. self.myOutlet = nil;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
+    // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
