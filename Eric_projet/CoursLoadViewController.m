@@ -7,6 +7,7 @@
 //
 
 #import "CoursLoadViewController.h"
+#import "DetailListViewController.h"
 #import "Contact.h"
 
 @interface CoursLoadViewController ()
@@ -91,24 +92,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     
-     #pragma mark - Table view delegate
-     
-     - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-     {
-     VideoDetailViewController *detailViewController = [[VideoDetailViewController alloc] initWithNibName:@"VideoDetailViewController" bundle:nil];
-     
-     detailViewController.video = [_arrayToDisplay objectAtIndex:indexPath.row];
-     
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     
-     }
-     */
+    DetailListViewController *detailListViewController = [[DetailListViewController alloc]initWithNibName:@"DetailListViewController" bundle:nil];
+    // Possibilité d’afficher un titre dans la barre de navigation
+    Contact *vin = [_arrayOfContacts objectAtIndex:[indexPath row]];
+    detailListViewController.title = vin.firstName;
+    detailListViewController.texteAAfficher = vin.job;
+    NSString* myNewString = [NSString stringWithFormat:@"%i",vin.age];
+    detailListViewController.texteAAfficher2 = myNewString;
+    [self.navigationController pushViewController:detailListViewController animated:YES];
 }
 
 // 4) implement protocol
