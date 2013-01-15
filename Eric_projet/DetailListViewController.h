@@ -12,6 +12,7 @@
     UILabel *_label; 
 }
 
-@property (nonatomic, strong) NSString *texteAAfficher; 
+@property (nonatomic, strong) NSString *texteAAfficher;
+@property (nonatomic, strong) NSString *texteAAfficher2;
 
 @end

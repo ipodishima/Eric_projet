@@ -9,6 +9,7 @@
 #import "DetailListViewController.h"
 @implementation DetailListViewController 
 @synthesize texteAAfficher = _texteAAfficher;
+@synthesize texteAAfficher2 = _texteAAfficher2;
 
 - (void)didReceiveMemoryWarning
 {

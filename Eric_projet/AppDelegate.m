@@ -7,110 +7,61 @@
 //
 
 #import "AppDelegate.h"
-#import "Vins.h"
-#import "Commandes.h"
-#import "Communautaire.h"
-#import "Profil.h"
-#import "Apropos.h"
-
-#import "YouTubeViewController.h"
-#import "LocalFileViewController.h"
-#import "WineViewController.h"
-#import "PerformancesViewController.h"
-#import "VideoViewController.h"
-#import "SampleLoadViewController.h"
-#import "CoursLoadViewController.h"
-#import "VinViewController.h"
-#import "DataListViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize tabBarController = _tabBarController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    //self.tabBarController = [[UITabBarController alloc] init];
- 
-    //UIImage *bouteille = [[UIImage alloc] initWithContentsOfFile:@"bouteille.png"];
-    /*SampleLoadViewController *vins = [[SampleLoadViewController alloc] initWithStyle:UITableViewStylePlain];
-    UINavigationController *navControllerSample = [[UINavigationController alloc] initWithRootViewController:vins];
-    UITabBarItem *tabBarItem1 = [[UITabBarItem alloc] initWithTitle:@"Vins"
-                                                              image:nil
-                                                                tag:5];
-    vins.title = @"Vins";
-    navControllerSample.tabBarItem = tabBarItem1;*/
-    
-    /*
-    DataListViewController *vins = [[DataListViewController alloc] initWithStyle:UITableViewStylePlain];
-    UINavigationController *navControllerSample = [[UINavigationController alloc] initWithRootViewController:vins];
-    UITabBarItem *tabBarItem1 = [[UITabBarItem alloc] initWithTitle:@"Vins"
-                                                              image:nil
-                                                                tag:5];
-    vins.title = @"Vins";
-    navControllerSample.tabBarItem = tabBarItem1;
-    
-    
-    
-    CoursLoadViewController *cours = [[CoursLoadViewController alloc] initWithStyle:UITableViewStylePlain];
-    UINavigationController *navControllerCours = [[UINavigationController alloc] initWithRootViewController:cours];
-    UITabBarItem *tabBarItem3 = [[UITabBarItem alloc] initWithTitle:@"Cours"
-                                                              image:nil
-                                                                tag:3];
-    cours.title = @"Cours";
-    navControllerCours.tabBarItem = tabBarItem3;
-     
-    Commandes *commandes = [[Commandes alloc] initWithNibName:@"Commandes" bundle:nil];
-    commandes.title = @"Commandes";
-    
-    VideoViewController *video = [[VideoViewController alloc] initWithStyle:UITableViewStylePlain];
-    UINavigationController *navControllerVideo = [[UINavigationController alloc] initWithRootViewController:video];
-    UITabBarItem *tabBarItem5 = [[UITabBarItem alloc] initWithTitle:@"Video"
-                                                              image:nil
-                                                                tag:4];
-      navControllerVideo.tabBarItem = tabBarItem5;
-    
-    Communautaire *communautaire = [[Communautaire alloc] initWithNibName:@"Communautaire" bundle:nil];
-    communautaire.title = @"Amis";
-    
-    Profil *profil = [[Profil alloc] initWithNibName:@"Profil" bundle:nil];
-    profil.title = @"Profil";
-    
-    Apropos *apropos = [[Apropos alloc] initWithNibName:@"APropos" bundle:nil];
-    apropos.title = @"A Propos";
-        
-    _tabBarController.viewControllers = [NSArray arrayWithObjects:vins, cours, commandes, navControllerVideo, communautaire, profil, apropos, nil];
-    
-    [self.window setRootViewController:_tabBarController];
-    [_tabBarController.tabBar setTintColor:[UIColor blueColor]];
-    [_tabBarController.tabBar setSelectedImageTintColor:[UIColor whiteColor]];
-    
-   
-    _dataListViewController = [[DataListViewController alloc] initWithStyle:UITableViewStylePlain];
-    _navController = [[UINavigationController alloc] initWithRootViewController:_dataListViewController];
-    [self.window setRootViewController:_tabBarController];
-    [self.window makeKeyAndVisible];*/
-    
+  
     nc1 = [[UINavigationController alloc] init];
-    vc1 = [[DataListViewController alloc] initWithNibName:nil bundle:nil];
-    vc1.tabBarItem.title = @"Tab 1";
-    vc1.tabBarItem.image = [UIImage imageNamed:@"tab1.png"];
-    vc1.navigationItem.title = @"Tab 1 Data";
+    nc1.title= @"Vins";
+    vc1 = [[SampleLoadViewController alloc] initWithNibName:nil bundle:nil];
+    vc1.navigationItem.title = @"Vins";
     nc1.viewControllers = [NSArray arrayWithObjects:vc1, nil];
     
     nc2 = [[UINavigationController alloc] init];
-    vc2 = [[VideoViewController alloc] initWithNibName:nil bundle:nil];
-    vc2.tabBarItem.title = @"Tab 2";
-    vc2.tabBarItem.image = [UIImage imageNamed:@"tab2.png"];
-    vc2.navigationItem.title = @"Tab 2 Data";
+    nc2.title= @"Cours";
+    vc2 = [[CoursLoadViewController alloc] initWithNibName:nil bundle:nil];
+    vc2.navigationItem.title = @"Cours";
     nc2.viewControllers = [NSArray arrayWithObjects:vc2, nil];
     
+    nc3 = [[UINavigationController alloc] init];
+    nc3.title= @"Video";
+    vc3 = [[VideoViewController alloc] initWithNibName:nil bundle:nil];
+    vc3.navigationItem.title = @"Video";
+    nc3.viewControllers = [NSArray arrayWithObjects:vc3, nil];
+    
+    nc4 = [[UINavigationController alloc] init];
+    nc4.title= @"Commandes";
+    vc4 = [[Commandes alloc] initWithNibName:nil bundle:nil];
+    vc4.navigationItem.title = @"Commandes";
+    nc4.viewControllers = [NSArray arrayWithObjects:vc4, nil];
+    
+    nc5 = [[UINavigationController alloc] init];
+    nc5.title= @"Communautaire";
+    vc5 = [[Communautaire alloc] initWithNibName:nil bundle:nil];
+    vc5.navigationItem.title = @"Communautaire";
+    nc5.viewControllers = [NSArray arrayWithObjects:vc5, nil];
+    
+    nc6 = [[UINavigationController alloc] init];
+    nc6.title= @"Profil";
+    vc6 = [[Profil alloc] initWithNibName:nil bundle:nil];
+    vc6.navigationItem.title = @"Profil";
+    nc6.viewControllers = [NSArray arrayWithObjects:vc6, nil];
+    
+    nc7 = [[UINavigationController alloc] init];
+    nc7.title= @"A propos";
+    vc7 = [[Apropos alloc] initWithNibName:nil bundle:nil];
+    vc7.navigationItem.title = @"A propos";
+    nc7.viewControllers = [NSArray arrayWithObjects:vc7, nil];
+    
     tbc = [[UITabBarController alloc] init];
-    tbc.viewControllers = [NSArray arrayWithObjects:nc1, nc2, nil];
+    tbc.viewControllers = [NSArray arrayWithObjects:nc1, nc2, nc3,nc4,nc5,nc6,nc7, nil];
     
     [self.window setRootViewController:tbc];
     [self.window makeKeyAndVisible];

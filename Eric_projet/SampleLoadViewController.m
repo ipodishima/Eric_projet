@@ -99,31 +99,14 @@
 {
     // Navigation logic may go here. Create and push another view controller.
     
-     //VinViewController *vindetailViewController = [[VinViewController alloc] init];
-    
-     // ...
-    //vindetailViewController.id = [_arrayToDisplay objectAtIndex:indexPath.row];
-     // Pass the selected object to the new view controller.
-     //[self.navigationController pushViewController:vindetailViewController animated:YES];
-     /*
-     #pragma mark - Table view delegate
-     
-     - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-     {
-     VideoDetailViewController *detailViewController = [[VideoDetailViewController alloc] initWithNibName:@"VideoDetailViewController" bundle:nil];
-     
-     detailViewController.video = [_arrayToDisplay objectAtIndex:indexPath.row];
-     
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     
-     }
-     */
-    
-    DetailListViewController *detailListViewController = [[DetailListViewController alloc]
-                                                          initWithNibName:@"DetailListViewController" bundle:nil];
-    detailListViewController.texteAAfficher = [_arrayOfContacts objectAtIndex:[indexPath row]]; // Possibilité d’afficher un titre dans la barre de navigation detailListViewController.title = [_dataToShow objectAtIndex:[indexPath row]];
+    DetailListViewController *detailListViewController = [[DetailListViewController alloc]initWithNibName:@"DetailListViewController" bundle:nil];
+    // Possibilité d’afficher un titre dans la barre de navigation
+    Contact *vin = [_arrayOfContacts objectAtIndex:[indexPath row]];
+    detailListViewController.title = vin.firstName;
+    detailListViewController.texteAAfficher = vin.job;
+    NSString* myNewString = [NSString stringWithFormat:@"%i",vin.age];
+    detailListViewController.texteAAfficher2 = myNewString;
     [self.navigationController pushViewController:detailListViewController animated:YES];
-    NSLog(@"fsdfsd");
     
 }
 

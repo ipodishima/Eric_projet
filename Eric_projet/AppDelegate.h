@@ -7,20 +7,27 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DataListViewController.h"
+#import "SampleLoadViewController.h"
+#import "CoursLoadViewController.h"
 #import "VideoViewController.h"
+#import "Commandes.h"
+#import "Communautaire.h"
+#import "Profil.h"
+#import "Apropos.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-{
-    DataListViewController *_dataListViewController;
-    UINavigationController *_navController;
-    
-    UINavigationController *nc1, *nc2;
-    DataListViewController *vc1;
-    VideoViewController *vc2;
+{    
+    UINavigationController *nc1, *nc2, *nc3, *nc4, *nc5, *nc6, *nc7;
+    SampleLoadViewController *vc1;
+    CoursLoadViewController *vc2;
+    VideoViewController *vc3;
+    Commandes *vc4;
+    Communautaire *vc5;
+    Profil *vc6;
+    Apropos *vc7;
+     
     UITabBarController *tbc;
 }
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) UITabBarController *tabBarController;
 
 @end
