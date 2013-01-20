@@ -82,7 +82,7 @@
     
     // Display!
     cell.textLabel.text = [NSString stringWithFormat:@"%@", c.firstName];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@ — %@", c.lastName, c.job, c.age];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@ — %d", c.lastName, c.job, c.age];
     
     return cell;
 }
@@ -142,7 +142,7 @@
         c.firstName = [dic objectForKey:@"nom"];
         c.lastName = [dic objectForKey:@"lieu"];
         c.job = [dic objectForKey:@"date"];
-        c.age = [dic objectForKey:@"prix"];
+        c.age = [[dic objectForKey:@"prix"] integerValue];
         
         // Add it to the array
         [_arrayOfContacts addObject:c];
