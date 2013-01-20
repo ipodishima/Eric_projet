@@ -57,6 +57,7 @@
 		9B8FCB311639379000BE40D1 /* VideoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8FCB2D1639379000BE40D1 /* VideoDetailViewController.m */; };
 		9B8FCB321639379000BE40D1 /* VideoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8FCB2E1639379000BE40D1 /* VideoDetailViewController.xib */; };
 		9B8FCB331639379000BE40D1 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8FCB301639379000BE40D1 /* VideoViewController.m */; };
+		E0977CF516AC0D3D002447FF /* DetailListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B26186016A54BAF00E68168 /* DetailListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -398,6 +399,7 @@
 				9B1D4F66169D9483008BA64F /* document.json in Resources */,
 				9B791C1A169EC411007433BD /* cours.json in Resources */,
 				9B26184616A43F4D00E68168 /* VinViewController.xib in Resources */,
+				E0977CF516AC0D3D002447FF /* DetailListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
