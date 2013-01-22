@@ -33,7 +33,7 @@
     _activity = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
     [self.navigationItem setRightBarButtonItem:[[UIBarButtonItem alloc] initWithCustomView:_activity]];
     
-    [[YouTubeManager shared] setYouTubeUsername:@"iPuPsarl"];
+    [[YouTubeManager shared] setYouTubeUsername:@"lepetitballoncom"];
     [[YouTubeManager shared] setDelegate:self];
     [[YouTubeManager shared] loadDataFromOffset:1];
 }

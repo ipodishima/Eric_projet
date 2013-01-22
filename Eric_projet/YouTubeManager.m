@@ -27,8 +27,8 @@
 - (void) loadDataFromOffset:(NSInteger)offset
 {
     // Build the parameters of the request
-    //NSString *parameters = [NSString stringWithFormat:@"alt=json&v=2&author=%@&max-result=%d&start-index=%d&orderby=published", self.youTubeUsername, YOUTUBE_PAGING_SIZE, offset];
-    NSString *parameters = [NSString stringWithFormat:@"alt=json&v=2&author=lepetitballoncom&max-result=%d&start-index=%d&orderby=published", YOUTUBE_PAGING_SIZE, offset];
+    NSString *parameters = [NSString stringWithFormat:@"alt=json&v=2&author=%@&max-result=%d&start-index=%d&orderby=published", self.youTubeUsername, YOUTUBE_PAGING_SIZE, offset];
+    //NSString *parameters = [NSString stringWithFormat:@"alt=json&v=2&author=lepetitballoncom&max-result=%d&start-index=%d&orderby=published", YOUTUBE_PAGING_SIZE, offset];
     
     // Build the parameters of the request
     //NSString *parameters = [NSString stringWithFormat:@"alt=json&v=2&author=%@&max-result=%d&start-index=%d&orderby=published", self.youTubeUsername, YOUTUBE_PAGING_SIZE, offset];
